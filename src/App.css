@@ -1,0 +1,35 @@
+body {
+  background-color: var(--dark);
+  color: var(--light);
+  font-family: "Signika Negative", sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+.sword {
+  width: 10px; /* The thin side of the sword */
+  height: 100px; /* The long side of the sword */
+  background-color: #ccc;
+  position: absolute;
+  transform-origin: bottom center; /* Ensure the sword rotates around the bottom center */
+}
+
+/* Position the swords in the center of the screen, slightly offset */
+.sword1 {
+  left: calc(52%); /* 5px is half the width of the sword to center it */
+  bottom: 50%;
+  background-color: green;
+}
+
+.sword2 {
+  right: calc(52%);
+  bottom: 50%;
+  background-color: purple;
+}
+.introContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  min-height: 100vh;
+}
