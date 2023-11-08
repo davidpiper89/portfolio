@@ -1,5 +1,4 @@
 import React, { useLayoutEffect, useRef } from "react";
-import "./Header.css";
 import { gsap } from "gsap";
 
 function Header() {

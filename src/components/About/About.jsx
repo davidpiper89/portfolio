@@ -4,7 +4,7 @@ import "./About.css";
 const About = () => {
   return (
     <section className="aboutContainer">
-
+      <div>gefefe</div>
     </section>
   );
 };
