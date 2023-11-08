@@ -1,11 +1,15 @@
 import React from "react";
-import IntroAnimation from "./components/IntroAnimation";
+import Header from "./components/Header/Header";
+import Nav from "./components/Nav/Nav";
+import Links from "./components/Links/Links";
 import "./App.css";
 
 function App() {
   return (
     <div className="App">
-      <IntroAnimation />
+      <Header />
+      <Nav />
+      <Links />
     </div>
   );
 }
