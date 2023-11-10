@@ -16,48 +16,58 @@ function Header() {
   };
 
   useLayoutEffect(() => {
-    gsap.set(firstName.current, { x: "-500%" });
-    gsap.set(lastName.current, { x: "500%" });
-    gsap.set(title.current, { autoAlpha: 0 });
-    const tl = gsap.timeline({ defaults: { ease: "power1.out" } });
+    if (sessionStorage.getItem("headerAnimationPlayed")) {
+      // If the animation has played, set elements to their final state without animation
+      gsap.set(firstName.current, { x: -143 });
+      gsap.set(lastName.current, { x: 48 });
+      gsap.set(title.current, { autoAlpha: 1 });
+    } else {
+      gsap.set(firstName.current, { x: "-500%" });
+      gsap.set(lastName.current, { x: "500%" });
+      gsap.set(title.current, { autoAlpha: 0 });
+      const tl = gsap.timeline({ defaults: { ease: "power1.out" } });
 
-    tl.from(firstName.current, {
-      x: "-500%",
-      duration: 1,
-    })
-      .from(
-        lastName.current,
-        {
-          x: "500%",
-          duration: 1,
-        },
-        "<"
-      )
-      .to(firstName.current, { x: "-150%" })
-      .to(lastName.current, { x: "55%" })
-      .to(lastName.current, { rotation: 0, y: 0, duration: 0.2 }, "<");
-
-    // Shimmer effect
-    const shimmerTl = gsap.timeline();
-
-    shimmerTl
-      .to([...firstName.current.children, ...lastName.current.children], {
-        color: "var(--gold)",
-        duration: 0.09,
-        stagger: {
-          each: 0.1,
-          repeat: 1,
-          yoyo: true,
-        },
+      tl.from(firstName.current, {
+        x: "-500%",
+        duration: 1,
       })
-      .to(title.current, { autoAlpha: 1, duration: 0.5 });
+        .from(
+          lastName.current,
+          {
+            x: "500%",
+            duration: 1,
+          },
+          "<"
+        )
+        .to(firstName.current, { x: "-150%" })
+        .to(lastName.current, { x: "55%" })
+        .to(lastName.current, { rotation: 0, y: 0, duration: 0.2 }, "<")
+        .add(() => {
+          sessionStorage.setItem("headerAnimationPlayed", "true");
+        });
 
-    tl.add(shimmerTl);
+      // Shimmer effect
+      const shimmerTl = gsap.timeline();
 
-    return () => {
-      tl.kill();
-      shimmerTl.kill();
-    };
+      shimmerTl
+        .to([...firstName.current.children, ...lastName.current.children], {
+          color: "var(--gold)",
+          duration: 0.09,
+          stagger: {
+            each: 0.1,
+            repeat: 1,
+            yoyo: true,
+          },
+        })
+        .to(title.current, { autoAlpha: 1, duration: 0.5 });
+
+      tl.add(shimmerTl);
+
+      return () => {
+        tl.kill();
+        shimmerTl.kill();
+      };
+    }
   }, []);
 
   return (

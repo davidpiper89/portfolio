@@ -1,0 +1,91 @@
+.projectsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  height: 100vh;
+}
+.projectsTitle {
+  color: var(--gold);
+  font-size: 2rem;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+.projectContainer {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--dark);
+  color: var(--light);
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+}
+
+.projectTitle {
+  padding: 1rem;
+}
+
+.projectImage {
+  max-width: 80%;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.projectDetails {
+  text-align: center;
+  padding: 1rem;
+}
+
+.projectSkills {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: var(--light);
+}
+
+.projectLinks a {
+  display: inline-block;
+  margin: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  background-color: var(--gold);
+  color: var(--dark);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.projectLinks a:hover {
+  background-color: var(--light);
+}
+
+.arrowSlider {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  justify-content: space-around;
+  bottom: 15%;
+}
+
+.arrowBtn {
+  all: unset;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.arrowBtn:hover {
+  color: var(--light);
+}
+
+.arrowBtn:nth-of-type(1) {
+  left: 30%;
+}
+
+.arrowBtn:nth-of-type(2) {
+  right: 30%;
+}
+
+.ArrowBigLeft,
+.ArrowBigRight {
+  color: var(--light);
+}

@@ -4,26 +4,27 @@ import { BsLinkedin, BsGithub } from "react-icons/bs";
 import CV from "./../../assets/CV.pdf";
 
 const Links = () => {
-  // Create a ref for the links container
   const linksContainerRef = useRef(null);
+  let animationDelay = sessionStorage.getItem("linksAnimationPlayed") ? 0 : 5;
 
   useEffect(() => {
-    const animationDelay = 5;
+    gsap
+      .fromTo(
+        linksContainerRef.current.children,
+        { scale: 0 },
+        {
+          duration: 1,
+          scale: 1,
+          ease: "back.out(1.7)",
+          stagger: 0.2,
+          delay: animationDelay,
+        }
+      )
+      .then(() => {
+        sessionStorage.setItem("linksAnimationPlayed", "true");
+      });
+  }, [animationDelay]);
 
-    gsap.fromTo(
-      linksContainerRef.current.children,
-      {
-        scale: 0,
-      },
-      {
-        duration: 1,
-        scale: 1,
-        ease: "back.out(1.7)",
-        stagger: 0.2,
-        delay: animationDelay,
-      }
-    );
-  }, []);
   return (
     <ul className="linksContainer" ref={linksContainerRef}>
       <li>

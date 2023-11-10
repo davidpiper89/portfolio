@@ -1,0 +1,35 @@
+.sectionContainer {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  color: var(--light);
+  background-color: var(--dark);
+  min-height: 100vh;
+  opacity: 0;
+}
+
+.aboutTitle {
+  color: var(--gold);
+  font-size: 2rem;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+.aboutContent {
+  font-size: 1rem;
+  max-width: 800px;
+  text-align: center;
+}
+
+.aboutContent p {
+  margin-bottom: 1rem;
+}
+
+.aboutContent .link {
+  color: var(--gold);
+  text-decoration: none;
+  font-weight: bold;
+}
