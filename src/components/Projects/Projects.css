@@ -63,7 +63,10 @@
   display: flex;
   position: absolute;
   width: 100%;
-  justify-content: space-around;
+  justify-content: center;
+
+  align-items: center;
+  gap: 2rem;
   bottom: 15%;
 }
 
@@ -88,4 +91,10 @@
 .ArrowBigLeft,
 .ArrowBigRight {
   color: var(--light);
+}
+
+@media screen and (min-width: 600px) {
+  .projectImage {
+    max-width: 400px;
+  }
 }

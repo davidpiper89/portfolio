@@ -80,7 +80,9 @@ const ProjectSlider = ({ projects }) => {
           <button className="arrowBtn" onClick={showPrevProject}>
             <ArrowBigLeft />
           </button>
-          <div>pages x/x</div>
+          <div>
+            {projectIndex + 1} / {projects.length}
+          </div>
           <button className="arrowBtn" onClick={showNextProject}>
             <ArrowBigRight />
           </button>

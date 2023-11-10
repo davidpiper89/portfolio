@@ -1,4 +1,8 @@
 /* Header css */
+
+.headerContainer {
+  height: 45vh
+}
 .name {
   font-size: 2rem;
   font-weight: bold;
@@ -54,7 +58,6 @@
 /* Nav css */
 
 .navContainer {
-  margin-top: 45vh;
   text-align: center;
 }
 
@@ -106,4 +109,14 @@
   text-decoration: none;
   color: var(--gold);
   font-size: 1rem;
+}
+
+@media screen and (min-width: 700px) {
+  .name {
+    font-size: 3rem;
+  }
+  .title {
+    top: 32%;
+  }
+  
 }

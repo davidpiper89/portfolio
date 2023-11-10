@@ -1,5 +1,8 @@
 .appContainer {
-    height: 100vh;
+  height: 100vh;
+  display: flex;
+  position: relative;
+  flex-direction: column;
 }
 
 .backButton {
@@ -13,7 +16,6 @@
   cursor: pointer;
   transition: all 0.3s ease;
   bottom: 5%;
-
 }
 
 .backButton:hover {

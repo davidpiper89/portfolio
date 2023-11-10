@@ -1,6 +1,7 @@
 import React from "react";
-import casino from "../../assets/casino.jpg";
-import blackjack from "../../assets/blackjack.jpg";
+import casino from "../../assets/casino.webp";
+import blackjack from "../../assets/blackjack.webp";
+import portfolio from "../../assets/portfolio.webp";
 import "./Projects.css";
 import ProjectSlider from "./ProjectSlider";
 
@@ -28,7 +29,7 @@ const MyProjects = () => {
     {
       id: 3,
       title: "Portfolio",
-      image: blackjack,
+      image: portfolio,
       github: "https://github.com/davidpiper89/blackjack",
       skills:
         "React.js, VITE app, gsap, responsive, react hooks (useState, useLayoutEffect, useEffect)",

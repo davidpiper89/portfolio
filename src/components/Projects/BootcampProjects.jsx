@@ -1,7 +1,7 @@
 import React from "react";
-import simpsonsImage from "../../assets/simpsons.jpg";
-import weatherImage from "../../assets/weather.jpg";
-import fantasyImage from "../../assets/fantasy.jpg";
+import simpsonsImage from "../../assets/simpsons.webp";
+import weatherImage from "../../assets/weather.webp";
+import fantasyImage from "../../assets/fantasy.webp";
 import "./Projects.css";
 import ProjectSlider from "./ProjectSlider";
 
@@ -13,7 +13,8 @@ const BootcampProjects = () => {
       image: simpsonsImage,
       github:
         "https://github.com/davidpiper89/FunctionalBasedReactReduxSimpsons",
-      skills: "React.js, React Redux, Axios, Node.js",
+      skills:
+        "React, CRA, React Redux, Axios, Node.js, react-router-dom, react hooks (useEffect, useSelector, useDispatch), CSS",
       website: "https://simpsons.david-piper-portfolio.co.uk/",
     },
     {
@@ -29,7 +30,8 @@ const BootcampProjects = () => {
       title: "Fantasy Football App",
       image: fantasyImage,
       github: "https://github.com/davidpiper89/fantasyfrontendgroup",
-      skills: "React.js, React Redux, Axios, CSS, Joi, React Webcam",
+      skills:
+        "React, CRA, React Redux, React Hooks (useState, useSelector, useDispatch, useEffect), Axios, CSS, Joi validation, React Webcam",
       website: "https://fantasy.david-piper-portfolio.co.uk/",
     },
     {

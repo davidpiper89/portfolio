@@ -16,14 +16,34 @@ function Header() {
   };
 
   useLayoutEffect(() => {
+    const screenWidth = window.innerWidth;
+    let firstNameInitialXPosition, lastNameInitialXPosition;
+    let afterAnimationFirstNamePosition, afterAnimationSecondNamePosition;
+
+    if (screenWidth <= 700) {
+      firstNameInitialXPosition = "-500%";
+      lastNameInitialXPosition = "500%";
+      afterAnimationFirstNamePosition = -143;
+      afterAnimationSecondNamePosition = 48;
+    } else if (screenWidth > 700 && screenWidth <= 1400) {
+      firstNameInitialXPosition = "-1000%";
+      lastNameInitialXPosition = "1000%";
+      afterAnimationFirstNamePosition = -183;
+      afterAnimationSecondNamePosition = 105;
+    } else {
+      firstNameInitialXPosition = "-1500%";
+      lastNameInitialXPosition = "1500%";
+      afterAnimationFirstNamePosition = -183;
+      afterAnimationSecondNamePosition = 105;
+    }
     if (sessionStorage.getItem("headerAnimationPlayed")) {
       // If the animation has played, set elements to their final state without animation
-      gsap.set(firstName.current, { x: -143 });
-      gsap.set(lastName.current, { x: 48 });
+      gsap.set(firstName.current, { x: afterAnimationFirstNamePosition });
+      gsap.set(lastName.current, { x: afterAnimationSecondNamePosition });
       gsap.set(title.current, { autoAlpha: 1 });
     } else {
-      gsap.set(firstName.current, { x: "-500%" });
-      gsap.set(lastName.current, { x: "500%" });
+      gsap.set(firstName.current, { x: firstNameInitialXPosition });
+      gsap.set(lastName.current, { x: lastNameInitialXPosition });
       gsap.set(title.current, { autoAlpha: 0 });
       const tl = gsap.timeline({ defaults: { ease: "power1.out" } });
 
