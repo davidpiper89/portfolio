@@ -76,19 +76,19 @@ const ProjectSlider = ({ projects }) => {
             )}
           </div>
         </div>
-        <div className="arrowSlider">
-          <button className="arrowBtn" onClick={showPrevProject}>
-            <ArrowBigLeft />
-          </button>
-          <div>
-            {projectIndex + 1} / {projects.length}
-          </div>
-          <button className="arrowBtn" onClick={showNextProject}>
-            <ArrowBigRight />
-          </button>
-        </div>
-        <BackButton />
       </div>
+      <div className="arrowSlider">
+        <button className="arrowBtn" onClick={showPrevProject}>
+          <ArrowBigLeft />
+        </button>
+        <div>
+          {projectIndex + 1} / {projects.length}
+        </div>
+        <button className="arrowBtn" onClick={showNextProject}>
+          <ArrowBigRight />
+        </button>
+      </div>
+      <BackButton />
     </>
   );
 };

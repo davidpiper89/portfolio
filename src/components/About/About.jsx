@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import "./About.css";
 import BackButton from "../BackButton";
+import me from "../../assets/me.webp";
 
 const About = () => {
   const aboutRef = useRef(null);
@@ -17,6 +18,7 @@ const About = () => {
   return (
     <section className="sectionContainer about" id="about" ref={aboutRef}>
       <div className="aboutTitle">About me</div>
+      <img src={me} alt="pic" className="mePic"></img>
       <div className="aboutContent">
         <p>
           Hello! I'm David. I am a full stack web developer and computer

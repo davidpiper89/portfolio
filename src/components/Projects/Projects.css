@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2rem;
+
   height: 100vh;
 }
 .projectsTitle {
@@ -28,20 +28,41 @@
 }
 
 .projectImage {
-  max-width: 80%;
+  max-width: 300px;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
 
+@media screen and (min-width: 700px) {
+  .projectImage {
+    max-width: 400px;
+  }
+}
+
+@media screen and (max-height: 800px) {
+  .projectImage {
+    max-width: 200px;
+  }
+}
 .projectDetails {
   text-align: center;
   padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .projectSkills {
   font-size: 1rem;
   margin-bottom: 1rem;
   color: var(--light);
+  max-width: 90%;
+}
+
+@media screen and (min-width: 700px) {
+  .projectSkills {
+    max-width: 50%;
+  }
 }
 
 .projectLinks a {
@@ -77,7 +98,7 @@
 }
 
 .arrowBtn:hover {
-  color: var(--light);
+  color: var(--gold);
 }
 
 .arrowBtn:nth-of-type(1) {
@@ -91,10 +112,4 @@
 .ArrowBigLeft,
 .ArrowBigRight {
   color: var(--light);
-}
-
-@media screen and (min-width: 600px) {
-  .projectImage {
-    max-width: 400px;
-  }
 }

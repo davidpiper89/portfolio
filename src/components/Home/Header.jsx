@@ -48,13 +48,13 @@ function Header() {
       const tl = gsap.timeline({ defaults: { ease: "power1.out" } });
 
       tl.from(firstName.current, {
-        x: "-500%",
+        x: firstNameInitialXPosition,
         duration: 1,
       })
         .from(
           lastName.current,
           {
-            x: "500%",
+            x: lastNameInitialXPosition,
             duration: 1,
           },
           "<"

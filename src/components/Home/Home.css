@@ -1,14 +1,15 @@
 /* Header css */
 
 .headerContainer {
-  height: 45vh
+  height: 40vh;
+  position: relative;
 }
 .name {
   font-size: 2rem;
   font-weight: bold;
   color: var(--light);
   position: absolute;
-  top: 25%;
+  top: 50%;
   transform: translateY(-50%);
   white-space: nowrap;
 }
@@ -16,7 +17,7 @@
   font-size: 1rem;
   color: var(--gold);
   position: absolute;
-  top: 30%;
+  top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
   opacity: 0;
@@ -110,13 +111,19 @@
   color: var(--gold);
   font-size: 1rem;
 }
+.linksContainer li a:hover {
+  color: var(--light);
+}
 
 @media screen and (min-width: 700px) {
   .name {
     font-size: 3rem;
   }
   .title {
-    top: 32%;
+    top: 65%;
+    font-size: 1.5rem;
   }
-  
+  .linksContainer {
+    margin-right: 2rem;
+  }
 }

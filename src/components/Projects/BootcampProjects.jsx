@@ -14,7 +14,7 @@ const BootcampProjects = () => {
       github:
         "https://github.com/davidpiper89/FunctionalBasedReactReduxSimpsons",
       skills:
-        "React, CRA, React Redux, Axios, Node.js, react-router-dom, react hooks (useEffect, useSelector, useDispatch), CSS",
+        "React, CRA, React Redux, Axios, Node.js,  react hooks (useEffect, useSelector, useDispatch), CSS",
       website: "https://simpsons.david-piper-portfolio.co.uk/",
     },
     {
@@ -40,7 +40,7 @@ const BootcampProjects = () => {
       image: fantasyImage,
       github: "https://github.com/davidpiper89/fantasyfootballbackendgroup",
       skills:
-        "Javascript, Axios, Express, CRUD, Middleware, Nodemailer, MySQL, pHpMyAdmin, Insomnia, npm, nodemon",
+        "Javascript, Axios, Express, CRUD, RESTless API endpoints,  Middleware, Nodemailer, MySQL, pHpMyAdmin, Insomnia, npm, nodemon",
       website: "",
     },
   ];
