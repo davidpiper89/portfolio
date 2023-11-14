@@ -26,7 +26,7 @@ This React project is a personal portfolio website designed to showcase web deve
 
 To run this project, you need to have Node.js installed on your system.
 
-1. Clone the repository: git clone [repository URL]
+1. Clone the repository: git clone https://github.com/davidpiper89/portfolio
 2. Install dependencies: npm install
 3. Start the application: npm start
    
@@ -34,4 +34,3 @@ To run this project, you need to have Node.js installed on your system.
 
 Navigate through different sections using the menu. Each project in the 'Bootcamp Projects' and 'My Projects' sections can be explored in detail. Contact information is available in the 'Contact' section with an integrated form for direct messaging.
 
-## License
