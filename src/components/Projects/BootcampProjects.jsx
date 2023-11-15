@@ -31,7 +31,7 @@ const BootcampProjects = () => {
       image: fantasyImage,
       github: "https://github.com/davidpiper89/fantasyfrontendgroup",
       skills:
-        "React, CRA, React Redux, React Hooks (useState, useSelector, useDispatch, useEffect), Axios, CSS, Joi validation, React Webcam",
+        "React, CRA, React Redux, React Hooks (useState, useSelector, useDispatch, useEffect, useCallback), Axios, CSS, Joi validation, React Webcam",
       website: "https://fantasy.david-piper-portfolio.co.uk/",
     },
     {
