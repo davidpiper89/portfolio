@@ -9,6 +9,7 @@ const Nav = () => {
     : 4.5;
 
   useEffect(() => {
+    gsap.set(navItems.current, { autoAlpha: 0, y: -50 });
     gsap
       .fromTo(
         navItems.current,
