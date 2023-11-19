@@ -1,13 +1,10 @@
-
-
 .appContainer {
   height: 100vh;
   display: flex;
   position: relative;
   flex-direction: column;
+  overflow: hidden;
 }
-
-
 
 .backButton {
   position: absolute;
@@ -20,6 +17,12 @@
   cursor: pointer;
   transition: all 0.3s ease;
   bottom: 5%;
+}
+
+@media (max-width: 750px) {
+  .backButton {
+    margin-bottom: 60px;
+  }
 }
 
 .backButton:hover {

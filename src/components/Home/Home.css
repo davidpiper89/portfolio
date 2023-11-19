@@ -4,6 +4,12 @@
   height: 40vh;
   position: relative;
 }
+
+@media (max-width: 750px) {
+  .headerContainer {
+    height: 35vh;
+  }
+}
 .name {
   font-size: 2rem;
   font-weight: bold;
@@ -102,6 +108,12 @@
   margin-bottom: 2rem;
   gap: 1rem;
   z-index: 200000;
+}
+
+@media (max-width: 750px) {
+  .linksContainer {
+    padding-bottom: 60px; 
+  }
 }
 
 .linksContainer li {

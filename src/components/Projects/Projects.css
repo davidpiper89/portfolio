@@ -91,6 +91,12 @@
   bottom: 15%;
 }
 
+@media (max-width: 750px) {
+  .arrowSlider {
+    padding-bottom: 60px;
+  }
+}
+
 .arrowBtn {
   all: unset;
   cursor: pointer;
