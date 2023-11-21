@@ -14,7 +14,7 @@ const BootcampProjects = () => {
       github:
         "https://github.com/davidpiper89/FunctionalBasedReactReduxSimpsons",
       skills:
-        "React, CRA, Class components, state management, Lifecycle Methods, Axios, Asynchronous Javascript, GRID and CSS styling, Event/Form handling,  Array manipulation, JS ES6",
+        "React, CRA, JS ES6,  Class components, state management, Lifecycle Methods, Axios API integration, Asynchronous Javascript, GRID and CSS styling, Event/Form handling,  Array manipulation",
       website: "https://simpsons.david-piper-portfolio.co.uk/",
     },
     {
@@ -22,7 +22,7 @@ const BootcampProjects = () => {
       title: "Weather App",
       image: weatherImage,
       github: "https://github.com/davidpiper89/weatherproject",
-      skills: "HTML5, CSS, JavaScript, Axios",
+      skills: "HTML5, CSS, JS ES6, Axios, Asynchronous Javascript, Geolocation API, Module imports",
       website: "https://vanillajs.david-piper-portfolio.co.uk/",
     },
     {
@@ -31,7 +31,7 @@ const BootcampProjects = () => {
       image: fantasyImage,
       github: "https://github.com/davidpiper89/fantasyfrontendgroup",
       skills:
-        "React, CRA, React Redux, React Hooks (useState, useSelector, useDispatch, useEffect, useCallback), Axios, CSS, Joi validation, React Webcam",
+        "React, CRA, Functional Components, React Redux, React Hooks (useState, useSelector, useDispatch, useEffect, useCallback), Axios, CSS, Joi validation, React Webcam",
       website: "https://fantasy.david-piper-portfolio.co.uk/",
     },
     {
