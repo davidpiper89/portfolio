@@ -27,14 +27,17 @@
   font-size: 1rem;
   max-width: 800px;
   text-align: center;
- 
 }
+
 
 @media screen and (max-height: 750px) {
   .mePic {
     visibility: hidden;
     padding: 0px;
     height: 0px;
+  }
+  .aboutContent p {
+    font-size: 0.75rem;
   }
 }
 

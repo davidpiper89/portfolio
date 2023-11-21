@@ -12,7 +12,7 @@ const BootcampProjects = () => {
       title: "Simpsons Quotes",
       image: simpsonsImage,
       github:
-        "https://github.com/davidpiper89/FunctionalBasedReactReduxSimpsons",
+        "https://github.com/davidpiper89/ClassBasedReactSimpsons",
       skills:
         "React, CRA, JS ES6,  Class components, state management, Lifecycle Methods, Axios API integration, Asynchronous Javascript, GRID and CSS styling, Event/Form handling,  Array manipulation",
       website: "https://simpsons.david-piper-portfolio.co.uk/",
