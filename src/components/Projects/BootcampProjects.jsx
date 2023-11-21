@@ -14,7 +14,7 @@ const BootcampProjects = () => {
       github:
         "https://github.com/davidpiper89/FunctionalBasedReactReduxSimpsons",
       skills:
-        "React, CRA, React Redux, Axios, Node.js,  react hooks (useEffect, useSelector, useDispatch), CSS",
+        "React, CRA, Class components, state management, Lifecycle Methods, Axios, Asynchronous Javascript, GRID and CSS styling, Event/Form handling,  Array manipulation, JS ES6",
       website: "https://simpsons.david-piper-portfolio.co.uk/",
     },
     {
