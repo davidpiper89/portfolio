@@ -27,7 +27,7 @@ const About = () => {
           Professional Software Engineering Bootcamp. My career has been
           diverse, including a nearly decade-long tenure with the NHS, where I
           developed sophisticated Excel databases, blending my love for
-          technology with practical, impactful solutions.
+          technology with practical, effective solutions.
         </p>
 
         <p>
@@ -56,7 +56,7 @@ const About = () => {
         <p>
           I invite you to explore my portfolio, see my projects, and understand
           how my blend of technical prowess and strategic thinking come together
-          to create impactful digital solutions.
+          to create meaningful digital solutions.
         </p>
       </div>
       <BackButton />
